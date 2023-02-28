@@ -36,3 +36,6 @@ anyhow = "1.0.66"
 async-stream = "0.3"
 rstest = "0.15"
 tracing-subscriber = "0.3.16"
+
+[features]
+native-tls = [ "tokio-tungstenite/native-tls", "reqwest/native-tls" ]
